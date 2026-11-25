@@ -1,0 +1,21 @@
+[Unit]
+Description=Dongxue kinesiology teaching service
+After=network.target
+
+[Service]
+DynamicUser=yes
+StateDirectory=dongxue
+StateDirectoryMode=0700
+UMask=0077
+WorkingDirectory=/opt/dongxue/site
+EnvironmentFile=/etc/dongxue.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -u serve_lab.py --port 8784 --data-dir /var/lib/dongxue --public-origin ${LAB_ORIGIN}
+Restart=on-failure
+PrivateTmp=yes
+NoNewPrivileges=yes
+ProtectHome=yes
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target

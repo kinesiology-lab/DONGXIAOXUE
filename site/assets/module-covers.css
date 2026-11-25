@@ -1,0 +1,29 @@
+/* The illustration belongs to the title area. Body copy and controls have their own opaque surface. */
+.learning-card[data-module-art]{position:relative;isolation:isolate;overflow:hidden;background:#fff;--ink:#183d37}
+.learning-card[data-module-art=joint]{--wash:#ecf3ed;--art:url("home-modules/joint.webp")}
+.learning-card[data-module-art=bones]{--wash:#f5efe4;--art:url("home-modules/bones.webp")}
+.learning-card[data-module-art=painting]{--wash:#f8eee8;--art:url("home-modules/painting.webp")}
+.learning-card[data-module-art=muscles]{--wash:#f3e9e5;--art:url("home-modules/muscles.webp")}
+.learning-card[data-module-art]::before{content:"";position:absolute;z-index:-1;inset:0 0 auto;height:clamp(142px,14vw,195px);border:0;border-radius:0;transform:none;opacity:1;pointer-events:none;background:linear-gradient(0deg,#fff 0%,transparent 16%),linear-gradient(90deg,var(--wash) 0%,var(--wash) 32%,transparent 66%),var(--art) right 42% / auto 140% no-repeat,var(--wash)}
+.learning-card[data-module-art] .card-top{min-height:22px;align-items:flex-start}
+.learning-card[data-module-art] .card-icon{display:none}
+.learning-card[data-module-art] .category{color:#435a57;font-weight:600}
+.learning-card[data-module-art] h3{width:fit-content;max-width:56%;color:var(--ink);margin-top:clamp(17px,2.1vw,31px);position:relative}
+.learning-card[data-module-art] p{color:#39534d;position:relative;background:#fff}
+@media(max-width:680px){
+ .learning-card[data-module-art]::before{height:135px;background-size:auto,auto,auto 110%,auto}
+ .learning-card[data-module-art] h3{font-size:clamp(22px,6vw,28px);margin:15px 0 20px}
+}
+
+.learning-card[data-module-art=bones]::before{background-size:auto,auto,auto 103%,auto}
+.learning-card[data-module-art=clinic]{--wash:#e8f1ee;--art:url("../soap/media/intro.jpg")}
+.learning-card[data-module-art=clinic]::before{background-image:linear-gradient(0deg,#fff 0%,transparent 20%),linear-gradient(90deg,var(--wash) 0%,var(--wash) 39%,transparent 80%),var(--art);background-size:auto,auto,auto 108%;background-color:var(--wash)}
+.module-grid{align-items:stretch}
+.clinic-practice-menu{margin-top:12px}.clinic-practice-menu>summary{color:#265657;cursor:pointer;font-size:.9rem;text-align:center}.clinic-practice-menu .free-shortcuts{grid-template-columns:1fr}
+
+#freeProjects .module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(15px,2vw,26px)}
+#freeProjects .module-grid .learning-card{grid-column:auto;min-width:0}
+#freeProjects .module-grid h3 br{display:initial}
+@media(min-width:1550px){#freeProjects .module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:735px){#freeProjects .module-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:420px){#freeProjects .module-grid h3{max-width:65%}}

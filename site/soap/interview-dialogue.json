@@ -1,0 +1,30 @@
+{
+  "schema": "authored-portrait-dialogue-v21",
+  "presentation": "video stills with local synthetic speech; not new filmed or lip-synced footage",
+  "turns": [
+    {
+      "speaker": "therapist",
+      "text": "脚踝平时怎么不舒服？"
+    },
+    {
+      "speaker": "patient",
+      "text": "有点酸，有点紧。站久了或者走多了就明显，坐会儿能好些。"
+    },
+    {
+      "speaker": "therapist",
+      "text": "脚突然发软的时候，也会疼吗？"
+    },
+    {
+      "speaker": "patient",
+      "text": "不一定疼。走不平的路，或者走得快、一拐弯，右脚有时像踩空了一下。"
+    },
+    {
+      "speaker": "therapist",
+      "text": "您现在最想恢复什么？"
+    },
+    {
+      "speaker": "patient",
+      "text": "我想先走稳点，不用一看路不平就绕。以后还想慢跑。"
+    }
+  ]
+}

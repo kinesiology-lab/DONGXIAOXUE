@@ -1,0 +1,50 @@
+#clinic[data-bedside-active="true"] > :not(#scene):not(.bedside-player){display:none!important}
+.bedside-player{position:absolute;inset:0;z-index:12;color:#123c39;pointer-events:none;font:16px/1.5 "Microsoft YaHei",system-ui,sans-serif}
+.bedside-player button,.bedside-player input{pointer-events:auto}
+.bedside-player button{cursor:pointer;padding:.48em .95em;border-radius:999px;background:#fff;color:#184640;border:1px solid #bbcdc4;font:inherit;min-height:38px}
+.bedside-player button[aria-pressed="true"],.bedside-player [data-play]{background:#145d52;color:white;border-color:#145d52}
+.bedside-title{position:absolute;top:1rem;left:1rem;right:1rem;display:flex;justify-content:space-between;align-items:center}
+.bedside-title strong,.bedside-bottom{background:rgba(255,255,252,.96);border:1px solid #bfd0c5;border-radius:12px;padding:.6rem 1rem;box-shadow:0 3px 18px #112f2917}
+.bedside-bottom{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);width:min(90%,680px);box-sizing:border-box}
+.bedside-line{margin:.12rem 0;color:#123b36;font:inherit;font-weight:600}
+.bedside-controls,.bedside-chapters{display:flex;align-items:center;gap:.45rem}
+.bedside-controls{margin-top:.55rem}.bedside-controls input{min-width:2rem;flex:1;accent-color:#16715d}
+.bedside-chapters button{font-size:.86em;white-space:nowrap}
+.bedside-film .bedside-title button,.bedside-film .bedside-controls{display:none}
+.bedside-film .bedside-bottom{max-width:88%;width:max-content;font-size:1.16em}
+.bedside-player [hidden]{display:none!important}
+.practice-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.practice-actions button{font-size:14px;line-height:1.45}
+.practice-actions button:first-child{background:#145d52;color:#fff}
+.practice-feedback{margin:6px 0 0;font-size:14px;color:#89561e}
+.practice-feedback:empty{display:none}
+.practice-markers{position:absolute;inset:0;pointer-events:none}
+.practice-markers button{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;border:2px solid #126b5e;box-shadow:0 2px 10px #0002;z-index:2;touch-action:none}
+.practice-markers button:focus-visible{outline:4px solid #f3b347;outline-offset:4px}
+.practice-markers .practice-handle{background:#176e60;color:#fff;cursor:grab}
+.practice-direction{position:absolute;height:3px;background:#e7a62c;transform-origin:0 50%;z-index:1}
+.practice-direction:after{content:'';position:absolute;right:-1px;top:-5px;border-left:11px solid #e7a62c;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.bedside-practice .bedside-bottom{z-index:3}
+.bedside-views{pointer-events:auto;position:absolute;z-index:4;top:4.3rem;left:1rem;display:flex;flex-wrap:wrap;gap:2px;padding:3px;background:#fffffff2;border:1px solid #b7c8c2;border-radius:10px}
+.bedside-views button{font-size:14px;min-height:33px;padding:.28em .62em;border:0;background:transparent;border-radius:7px}
+.heel-leader{position:absolute;transform-origin:left center;border-top:1px dashed #126b5e;pointer-events:none}
+.inversion-arc{position:absolute;width:1px;height:1px;overflow:visible;pointer-events:none}
+.inversion-arc polyline{fill:none;stroke:#e7a62c;stroke-width:3}
+.inversion-arc polygon{fill:#e7a62c}
+.case-films-link{display:inline-block;margin:.55rem .35rem;color:#185e57;font-weight:600}
+.heel-leader:before{content:'';position:absolute;width:8px;height:8px;border:2px solid #146859;background:#fffc;border-radius:50%;top:-6px;left:-6px}
+.practice-markers button:not(.practice-handle){width:40px;height:40px;min-height:40px;padding:0;background:#fffdf6eb;color:#125e54;font-size:14px}
+.practice-markers button:not(.practice-handle):before{content:'';position:absolute;bottom:100%;left:50%;height:max(0px,calc(var(--pin-rise) - 14px));border-left:1px dashed #126b5e;pointer-events:none}
+.bedside-player:is([data-practice-stage="fixed"],[data-practice-stage="heel"]) .practice-actions button{background:white;color:#184640}
+#clinic .film-cue #filmWatch{display:inline-flex;align-items:center;min-height:34px;font-size:14px;font-weight:650;padding:4px 12px;color:#fff;background:#17665d;border:0;border-radius:7px}
+#clinic #filmWatch[hidden]{display:none!important}
+@media(max-width:620px){.bedside-views{top:3.7rem;left:.55rem}}
+@media(max-width:620px){.bedside-title{top:.55rem;left:.55rem;right:.55rem}.bedside-bottom{bottom:.55rem;width:96%;padding:.5rem .65rem}.bedside-controls{flex-wrap:wrap}.bedside-chapters{flex-basis:100%}.bedside-line{font-size:.9rem}}
+
+/* The hand examination sits in its own frame. Labels and buttons stay outside. */
+.bedside-player[data-detail=true]{display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:7px;padding:10px;box-sizing:border-box;overflow:auto;background:#e6edea;pointer-events:auto}
+.bedside-player[data-detail=true] .bedside-title,.bedside-player[data-detail=true] .bedside-views,.bedside-player[data-detail=true] .bedside-bottom{position:static;transform:none;width:min(591px,100%);box-sizing:border-box;flex-shrink:0}
+.bedside-player[data-detail=true] .bedside-views{align-self:center;width:fit-content;max-width:100%}
+.exam-detail-frame{position:relative;width:min(591px,100%);aspect-ratio:591/322;flex:none;overflow:hidden;background:#e5ece8}
+.exam-detail-frame>canvas,.exam-detail-frame>#scene{display:block;position:absolute;inset:0;width:100%;height:100%}
+.bedside-player[data-detail=true] .practice-actions{margin-top:5px}

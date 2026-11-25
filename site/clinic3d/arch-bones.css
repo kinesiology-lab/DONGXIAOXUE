@@ -1,0 +1,29 @@
+.arch-lab .study-body{grid-template-columns:minmax(0,1.36fr) minmax(330px,1fr)}
+.arch-lab .study-view{min-height:365px}.arch-lab .study-canvas{min-height:260px}
+.arch-lab .study-side{padding:20px}.arch-lab .arch-case-line{font-size:14px;color:#476158;margin:0 0 15px}
+.arch-tabs{display:flex;gap:5px;margin:0 0 14px}.arch-tabs button{font-size:14px;padding:7px 10px;flex:1}
+.arch-tabs button[aria-pressed=true],.arch-lab .study-view-nav button[aria-pressed=true]{background:#195c50;border-color:#195c50;color:#fff}
+.arch-lab .arch-progress{font-weight:700;color:#166452}.arch-lab .arch-remaining,.arch-lab .arch-feedback{font-size:14px}.arch-feedback:not(:empty){border-left:2px solid #64897b;padding-left:9px}
+.arch-lab .arch-case-note{font-size:13px;color:#3b6257;margin-top:12px}.arch-case-note summary{cursor:pointer}
+.arch-outlines{display:flex;gap:6px;width:100%;margin:8px 0}.arch-outlines figure{flex:1;margin:0;padding:4px;background:#f5f8f3;border:1px solid #dbe7dc;border-radius:6px}.arch-outlines svg{width:100%;height:68px;display:block}.arch-outlines figcaption{font-size:12px;text-align:center;color:#4a685d}
+.arch-lab .study-source select{max-width:58%;margin:7px 6px 0 0;padding:5px;font:inherit;color:#23493d}.arch-lab .study-source button{padding:5px 8px}
+.arch-hover{position:absolute;pointer-events:none;font-size:12px;color:#fff;background:#214e43;border-radius:5px;padding:2px 6px}
+.arch-lab .study-view-nav{flex-wrap:wrap}.arch-lab .study-cap{margin-bottom:10px}
+@media(max-width:680px){.arch-lab .study-view{min-height:0}.arch-lab .study-canvas{height:clamp(180px,30dvh,295px);min-height:0}.arch-lab .study-side{padding:12px 15px}.arch-lab .arch-case-line{margin-bottom:9px}.arch-tabs{margin-bottom:8px}}
+
+.arch-postures figure{margin:0 auto .5rem;max-width:210px;text-align:center}
+.arch-postures svg{display:block;width:100%;max-height:108px}
+.arch-postures figcaption{font-size:.8rem;color:#47616a}
+.arch-postures .study-primary{width:100%}
+
+.posture-reference,.stress-notes{font-size:.88rem;line-height:1.45;color:#244c46;padding:.45rem .6rem;border:1px solid #d7e4df;border-radius:.55rem;background:#f7faf7}
+.posture-reference summary,.stress-notes summary{cursor:pointer;font-weight:650}
+.posture-reference .posture-switch{display:flex;gap:.3rem;margin:.45rem 0}
+.posture-switch button{flex:1;padding:.26rem .4rem;font:inherit}
+.posture-switch [aria-pressed=true]{color:#fff;background:#1f6258}
+.arch-postures .posture-reference svg{max-height:148px}
+.posture-reference p,.stress-notes p{margin:.38rem 0}.posture-reference small{color:#526b65}
+.practice-actions .stress-notes{flex-basis:100%;text-align:left;max-height:26vh;overflow:auto}
+#wallReference{margin:.4rem 0 0;padding:.4rem;border-radius:.6rem;background:#f4f8f5;text-align:center}
+#wallReference svg{display:block;margin:auto;width:min(100%,400px);max-height:112px;font:13px sans-serif;fill:#31544e}
+#wallReference figcaption{font-size:.82rem;line-height:1.4;color:#3d5853}

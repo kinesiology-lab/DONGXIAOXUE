@@ -1,0 +1,169 @@
+/* Keep spoken turns and learner choices in one readable card. */
+#clinic #conversation:not([hidden]) {
+  --gutter: clamp(18px, 2.2vw, 30px);
+  position: fixed;
+  inset: 50% auto auto 50%;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: min(640px, calc(100vw - 32px));
+  max-width: none !important;
+  max-height: min(720px, calc(100dvh - 96px));
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #92b2aa;
+  border-radius: 19px;
+  background: #fffefa;
+  color: #193c35;
+  box-shadow: 0 15px 60px #162e3440, 0 2px 9px #12232520;
+}
+#conversation::before { display: none; }
+#conversation .conversation-head {
+  flex: none;
+  position: static;
+  margin: 0;
+  padding: 13px var(--gutter);
+  gap: 12px;
+  background: #f0f6f2;
+  border-bottom: 1px solid #dae6df;
+}
+#conversation .speaker-avatar { width: 35px; height: 35px; font-size: 16px; }
+#conversation .speaker-portrait { width: 44px; height: 50px; flex-basis: 44px; border-radius: 9px; }
+#conversation #speaker { color: #19544b; font-size: 17px; line-height: 1.4; }
+#conversation #pause { width: 40px; min-height: 36px; color: #214b40; background: white; }
+#conversationBody { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 15px var(--gutter); scrollbar-gutter: auto; }
+#conversation #line {
+  margin: 0;
+  color: #173d34;
+  font-size: clamp(20px, 1.7vw, 25px);
+  font-weight: 600;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+#conversation .learning-guide { margin: 10px 0 0; }
+#conversation .learning-guide summary { font-size: 14px; }
+#conversation #options:not(:empty) { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 12px; }
+#conversation #options button {
+  min-height: 47px;
+  padding: 9px 13px;
+  gap: 12px;
+  font-size: clamp(16px, 1.15vw, 18px);
+  line-height: 1.5;
+  color: #24443e;
+  border: 1px solid #c6d7d0;
+  border-radius: 10px;
+  background: #fafcf9;
+}
+#conversation #options button::before { min-width: 26px; height: 26px; font-size: 12px; color: #46685e; }
+#conversation #options button:enabled:hover, #conversation #options button.selected { background: #eaf5ef; border-color: #558d7d; }
+#conversation #options button.selected::before { background: #195e50; color: white; }
+#conversation :focus-visible { outline: 3px solid #236f86; outline-offset: 2px; }
+#conversation .conversation-foot {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding: 9px var(--gutter);
+  margin: 0;
+  border-top: 1px solid #dce6df;
+  background: #fffefa;
+}
+#conversation .conversation-foot button { min-height: 36px; padding: 5px 10px; font-size: 14px; }
+#conversation .line-controls { flex-wrap: wrap; }
+#conversation .line-controls:empty { display: none; }
+
+/* When a task owns the side panel, leave its model and controls in view. */
+body:not([data-dialogue-pending="true"]) #clinic:has(#taskDock:not([hidden])) #conversation:not([hidden]) {
+  inset: auto auto 16px 16px;
+  left: 16px !important;
+  transform: none;
+  width: min(480px, calc(100vw - 430px));
+  max-height: min(320px, 40dvh);
+  --gutter: 16px;
+}
+body:not([data-dialogue-pending="true"]) #clinic:has(#taskDock:not([hidden])) #conversation #line { font-size: 18px; }
+@media (max-width: 700px) {
+  #clinic #conversation:not([hidden]) { width: calc(100vw - 24px); max-height: calc(100dvh - 116px); border-radius: 15px; }
+  #conversation .conversation-head { padding: 10px var(--gutter); }
+  #conversationBody { padding-block: 12px; }
+  #conversation .conversation-foot { gap: 5px; }
+  body:not([data-dialogue-pending="true"]) #clinic:has(#taskDock:not([hidden])) #conversation:not([hidden]) {
+    inset: auto 8px 8px;
+    left: 8px !important;
+    width: calc(100vw - 16px);
+    max-height: 24dvh;
+    --gutter: 12px;
+  }
+  body:not([data-dialogue-pending="true"]):not([data-split-practice]) #clinic:has(#conversation:not([hidden])) #taskDock:not([hidden]) { bottom: calc(24dvh + 16px); max-height: calc(74dvh - 88px); }
+}
+@media (max-height: 540px) {
+  #clinic #conversation:not([hidden]) { max-height: calc(100dvh - 24px); width: min(600px, calc(100vw - 32px)); }
+  #conversation .conversation-head, #conversation .conversation-foot { padding-block: 5px; }
+  #conversation .speaker-portrait { width: 32px; height: 36px; flex-basis: 32px; }
+  #conversationBody { padding-block: 8px; }
+}
+
+/* Keep both tutor controls in the upper-right toolbar, clear of the task panel. */
+body #clinic #coach.lesson-coach{left:auto!important;right:16px!important;top:72px!important;width:min(265px,80vw)!important}
+body #clinic #coach.lesson-coach[data-collapsed=true]{width:auto!important;padding:3px 8px}
+body #clinic #coach.lesson-coach[data-collapsed=true] .coach-face{display:none}
+body:has(#clinic) .dxx-assistant-launch{inset:16px 84px auto auto!important;height:43px;padding:3px 12px 3px 4px}
+body:has(#clinic) .dxx-assistant-launch img{width:34px;height:34px}
+body:has(#clinic) .learning-bubble-v25{bottom:auto;top:128px;right:16px}
+@media(max-width:700px){body:has(#clinic) .dxx-assistant-launch{top:9px!important;right:64px!important;width:39px;height:39px;padding:2px}body:has(#clinic) .dxx-assistant-launch span{display:none}body #clinic #coach.lesson-coach{top:56px!important;right:8px!important}}
+
+body[data-node=wall_measure] #clinic #conversation:not([hidden]){inset:auto auto 14px 14px!important;transform:none!important;width:min(350px,75vw)!important;max-height:28dvh;overflow:auto}
+
+/* Place interview speech just beneath the existing toolbar. Leave the model
+   below the card, including in the therapist's close view and on phones. */
+body[data-interview] #clinic #conversation:not([hidden]){
+  inset:68px auto auto 50%;left:50%!important;transform:translateX(-50%);
+  width:min(620px,calc(100vw - 32px));max-height:35dvh;
+}
+body[data-interview] #conversation .conversation-head{padding:6px var(--gutter)}
+body[data-interview] #conversation .speaker-portrait{width:34px;height:37px;flex-basis:34px}
+body[data-interview] #conversationBody{padding:8px var(--gutter)}
+body[data-interview] #conversation .conversation-foot{padding:5px var(--gutter)}
+body[data-interview] #clinic #coach{display:none!important}
+@media(max-width:880px){
+ body[data-interview] #clinic #conversation:not([hidden]){top:111px}
+}
+@media(max-width:530px){
+ body[data-interview] #clinic #conversation:not([hidden]){top:97px;width:calc(100vw - 16px);max-height:33dvh}
+ body[data-interview] #conversation #line{font-size:18px}
+}
+@media(max-height:540px){
+ body[data-interview] #clinic #conversation:not([hidden]){top:60px;max-height:42dvh}
+ body[data-interview] #conversation .conversation-foot button{min-height:26px;padding:2px 8px}
+ body[data-interview] #conversation .speaker-portrait{width:27px;height:30px;flex-basis:27px}
+}
+
+body:has(#clinic[data-bedside-active=true]) .dxx-assistant-launch{inset:70px 14px auto auto!important}
+
+body[data-departure] :is(#skipStep,#coach,#previousStep,.learning-bubble-v25),
+body[data-departure="walking"] :is(#conversation,#views,.view-switch,.assessment-dock){display:none!important}
+
+body[data-arrival] :is(#conversation,#previousStep,#coach,#views,#caseProgress,#skipStep,#taskDock,.learning-bubble-v25,.assessment-dock){display:none!important}
+
+/* Reserve the upper part of the scene for the speaking actor. */
+body[data-speaker-shot]:not(:has(#clinic[data-bedside-active])) #clinic #conversation:not([hidden]){inset:auto auto 7px 50%!important;transform:translateX(-50%)!important;max-height:42dvh;width:min(760px,96vw);overflow:auto}
+.ankle-side-tag{position:absolute;z-index:2;pointer-events:none;transform:translate(-50%,-50%);border-radius:12px;padding:3px 8px;background:#fffdf5eb;color:#195253;font:bold 12px/1.35 sans-serif;white-space:nowrap}
+.ankle-side-tag[data-side=right]{color:#823916;background:#fff3d8f5}
+body[data-speaker-shot] .ankle-side-tag,body[data-speaker-shot] .practice-markers{visibility:hidden}
+
+body[data-wall-study] #coach { display:none!important }
+@media(min-width:721px), (orientation:landscape) and (max-height:520px) {
+ body[data-wall-study] #clinic { --wall-panel:clamp(275px,34vw,450px) }
+ body[data-wall-study] #clinic #scene { position:absolute;inset:64px auto auto 0!important;width:calc(100% - var(--wall-panel) - 18px)!important;height:calc(100% - 72px)!important }
+ body[data-wall-study] #clinic #conversation:not([hidden]) { inset:auto 10px 44px auto!important;transform:none!important;width:var(--wall-panel)!important;max-height:calc(100% - 120px)!important;overflow:auto }
+}
+@media(max-width:720px) and (min-height:521px), (max-width:720px) and (orientation:portrait) {
+ body[data-wall-study] #clinic #scene { position:absolute;inset:74px 0 auto!important;width:100%!important;height:calc(56% - 74px)!important }
+ body[data-wall-study] #clinic #conversation:not([hidden]) { inset:auto 8px 42px 8px!important;transform:none!important;width:auto!important;max-height:calc(44% - 45px)!important;overflow:auto }
+}
+
+.motion-landmarks{display:grid;grid-template-columns:auto 1fr;gap:.35rem .75rem;margin:.6rem 0;padding:.6rem;border-radius:.5rem;background:#eef5f2;font-size:.92em}.motion-landmarks dt{font-weight:700}.motion-landmarks dd{margin:0}

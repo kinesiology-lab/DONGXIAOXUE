@@ -1,0 +1,53 @@
+#clinic #welcome{padding:0;overflow:auto;width:min(450px,calc(100% - 28px));max-height:calc(100dvh - 90px);background:#fbfdfb;border:1px solid #c6d7ce;border-radius:18px;box-shadow:0 15px 52px #123e3329}
+.case-cover{position:relative;height:150px;color:white;overflow:hidden}.case-cover img{width:100%;height:100%;object-fit:cover;object-position:50% 41%}.case-cover>div{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:linear-gradient(0deg,#153e35ef,transparent 85%)}#welcome .case-cover h2{font-size:1.4rem;margin:.2em 0 0;color:white}.case-start{padding:18px}.case-start p{margin:0 0 12px;line-height:1.65}.case-start nav,#taskDesk nav{display:flex;gap:4px;flex-wrap:wrap}#welcome .case-start nav button,#taskDesk header button{font:inherit;font-size:14px;padding:8px 10px;border:0;background:#eaf2ed;color:#285441;border-radius:8px;cursor:pointer}#welcome .case-start .primary{width:100%;margin:12px 0 0}#welcome .case-start details{margin:10px 0 0}#taskDesk{box-sizing:border-box;width:min(500px,calc(100% - 24px));max-height:80dvh;padding:18px 20px;color:#193c32;background:#fff;border:1px solid #c6d7ce;border-radius:16px}#taskDesk::backdrop{background:#0b211d78}#taskDesk header,#taskDesk li{display:flex;align-items:center;justify-content:space-between;gap:6px}#taskDesk header button[aria-pressed=true]{background:#175d4c;color:white}#taskDesk h2{font-size:1.3rem}#taskDesk p{line-height:1.65}#taskDesk ul{padding:0;list-style:none}#taskDesk li{padding:7px 0;border-bottom:1px solid #e4ede7}#taskDesk li span{color:#416650;font-size:.88rem}#taskDesk progress{width:100%;accent-color:#27694d}#taskDesk a{color:#205f4a}
+body[data-free-practice] .learning-bubble-v25,body[data-free-practice] #coach{display:none!important}
+body[data-split-practice] #conversation,body[data-split-practice] .room-note,body[data-split-practice] .chapter-label{display:none!important}
+@media(max-width:700px){
+ body[data-split-practice] #scene{position:absolute!important;top:45px!important;left:0!important;width:100%!important;height:calc(45% - 45px)!important}
+ body[data-split-practice] #taskDock{position:absolute!important;inset:45% 0 0!important;width:auto!important;max-width:none!important;height:auto!important;max-height:none!important;margin:0!important;border-radius:16px 16px 0 0;display:flex;flex-direction:column;background:white}
+ body[data-split-practice] #taskDock .dock-content{flex:1;min-height:0;overflow:auto;max-height:none!important;padding-bottom:24px}
+ body[data-split-practice] #clinic .teacher-preview-badge{inset:4px 6px auto auto!important;transform:none!important;display:flex;align-items:center;gap:8px;font-size:12px}
+ body[data-split-practice] #clinic .teacher-preview-badge button{padding:5px 7px;font-size:12px}
+ body[data-split-practice] #clinic .view-switch{position:absolute!important;inset:auto auto 55.5% 6px!important;transform:none!important}
+ body[data-split-practice] #clinic .topbar,body[data-split-practice] .dxx-assistant-launch{display:none!important}
+ .case-cover{height:110px}
+}
+
+.clinical-quiz,.clinical-modal{color:#214641}.clinical-quiz h4{margin:.5rem 0}.clinical-quiz>button,.clinical-nav>button,.clinical-nav>a,.clinical-modal>button{font:inherit;font-size:14px;color:#164f48;border:1px solid #aec8c2;border-radius:9px;background:white;padding:8px 12px;cursor:pointer}.clinical-quiz>button{display:block;width:100%;text-align:left;margin:.35rem 0}.clinical-quiz>button:disabled{color:#536661;cursor:default}.clinical-nav{display:flex;flex-wrap:wrap;gap:6px;margin:.55rem 0}.clinical-nav [aria-pressed=true]{background:#17645b;color:white}.clinical-modal{position:fixed;inset:0;width:min(410px,85vw);max-height:80vh;overflow:auto;border:1px solid #b6cbc5;border-radius:14px;padding:20px}.clinical-modal::backdrop{background:#203c3980}.clinical-quiz p:empty{display:none}
+
+/* These tasks already include their contextual learning tools inside the dock. */
+body:is([data-node="alignment"],[data-node="muscle_match"],[data-node="static_cop"]) .learning-bubble-v25{display:none!important}
+
+#caseProgress{display:none;position:absolute;top:18px;left:50%;transform:translateX(-50%);width:clamp(164px,18vw,236px);z-index:4;padding:8px 14px;border:1px solid #b9cfc5;border-radius:12px;background:#fffef9f5;color:#214c41;font:600 13px/1.35 system-ui,sans-serif;box-shadow:0 3px 14px #183b3110;cursor:pointer}
+body[data-node]:not([data-free-practice]) #caseProgress{display:grid;gap:4px}
+body:has(.teacher-preview-badge) #clinic #caseProgress{display:none}
+#caseProgress span{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#caseProgress output{font-variant-numeric:tabular-nums;font-size:12px}
+#caseProgress progress,#taskDesk progress{appearance:none;width:100%;height:7px;background:#dce9e3;border:0;border-radius:8px;overflow:hidden}
+#caseProgress progress::-webkit-progress-bar,#taskDesk progress::-webkit-progress-bar{background:#dce9e3}
+#caseProgress progress::-webkit-progress-value,#taskDesk progress::-webkit-progress-value{background:#15725c;border-radius:8px}
+#caseProgress progress::-moz-progress-bar,#taskDesk progress::-moz-progress-bar{background:#15725c}
+#taskDesk ol{padding:0}#taskDesk li[data-status="已跳过"] span{color:#805822}#taskDesk li[data-status="进行中"] span{color:#145283}
+body[data-node="exam_close"] #clinic #conversation:not([hidden]){top:78px!important;bottom:auto!important;left:16px!important;transform:none!important;width:min(420px,calc(100% - 32px))!important;max-height:40dvh}
+body[data-node="exam_close"] #coach{display:none!important}
+@media(max-width:880px){#caseProgress{top:70px;left:16px;transform:none;width:170px}}
+@media(max-width:530px){#caseProgress{top:57px;left:10px;padding:5px 9px;width:156px}body[data-node="exam_close"] #clinic #conversation:not([hidden]){top:104px!important}}
+
+body[data-node=rom_measure] #clinic #taskDock:not([hidden]){position:absolute!important;left:50%!important;top:53%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important;width:min(720px,calc(100% - 26px))!important;max-width:none!important;max-height:76dvh!important;background:#fffefa;z-index:7;overflow:auto}
+body[data-node=rom_measure] #clinic #taskDock .dock-content{display:block!important;max-height:calc(76dvh - 46px)!important;overflow:auto}
+body[data-node=rom_measure] #dockToggle,body[data-node=rom_measure] #clinic #coach,body[data-node=rom_measure] #clinic .learning-bubble-v25,body[data-node=rom_measure] #conversation .conversation-head,body[data-node=rom_measure] #conversation .conversation-body,body[data-node=rom_measure] #conversation .line-controls,body[data-node=rom_measure] #stop{display:none!important}
+body[data-node=rom_measure] #clinic #conversation{left:12px!important;bottom:8px!important;top:auto!important;transform:none!important;width:auto!important;max-height:40px!important;z-index:8;padding:0!important;border:0}
+body[data-node=rom_measure] #conversation .conversation-foot{padding:0!important;display:flex!important}
+.gonio-panel{display:grid;gap:8px}.gonio-panel canvas{display:block;width:100%;height:auto;max-height:38dvh;object-fit:contain;background:#f1f6f4;border-radius:10px}
+.gonio-panel h3,.gonio-panel p{margin:0}.gonio-panel h3{color:#183e36}.gonio-panel small{color:#42665d}
+.gonio-actions{display:flex;gap:8px;flex-wrap:wrap}.gonio-actions button{background:#165e50;color:white;border:1px solid #165e50;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit}
+.gonio-actions button+button{background:white;color:#215747}.gonio-panel table,#romReportTable{margin:.4em 0;width:100%;border-collapse:collapse;font:normal 14px/1.4 system-ui;color:#23493d;text-align:center}
+.gonio-panel :is(td,th),#romReportTable :is(td,th){padding:6px 3px;border-bottom:1px solid #cddbd4}.gonio-panel thead,#romReportTable thead{background:#e6efea}
+@media(max-width:600px){body[data-node=rom_measure] #clinic #taskDock:not([hidden]){top:55%!important;max-height:72dvh!important}.gonio-panel canvas{max-height:31dvh}}
+
+#taskDesk li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px}
+#taskDesk li strong{font-weight:500;overflow-wrap:anywhere}
+#taskDesk li button{font:inherit;font-size:13px;color:#155848;background:#f3f9f5;border:1px solid #a9c8b8;border-radius:8px;padding:6px 9px;cursor:pointer}
+#taskDesk li button:hover,#taskDesk li button:focus-visible{background:#dcefe4}
+#taskDesk li button:disabled{opacity:.55;cursor:default}
+@media(max-width:480px){#taskDesk{padding:12px}#taskDesk li{gap:5px}#taskDesk li button{padding:7px 5px}}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《动小学》虚拟实验室用户使用数据</title>
+<link rel="stylesheet" href="dashboard.css"><script defer src="vendor/jszip.min.js"></script><script type="module" src="dashboard.js"></script>
+<link rel="stylesheet" href="student-windows.css"><script type="module" src="student-windows.js"></script></head>
+<body>
+<header id='overview'><div class='shell'><h1>《动小学》虚拟实验室用户使用数据</h1></div></header>
+<main class="shell">
+
+<section class="metrics" aria-label="课堂统计">
+<div><span>累计用户数</span><strong id="users">—</strong><small>登记学生 · 按学号去重</small></div>
+<div><span>已交卷人数</span><strong id="submitted">—</strong><small>本版综合测试</small></div>
+<div><span>平均成绩</span><strong id="average">—</strong><small>每人最近一次交卷</small></div>
+<div><span>病例完整提交人数</span><strong id="complete">—</strong><small>至少完整提交一次</small></div>
+</section>
+<section class="trends" aria-label="累计人数趋势"><figure><figcaption>累计使用人数</figcaption><div id="usageTrend"></div></figure><figure><figcaption>累计完成人数 <small>足踝病例</small></figcaption><div id="completionTrend"></div></figure></section>
+<div id="student-windows" class="student-windows"></div>
+<section class="panel" id="records"><div class="controls"><h2>学生名单 <small id="count"></small></h2><div><input type="search" id="search" aria-label="搜索姓名或学号" placeholder="搜索姓名或学号"><select id="filter" aria-label="筛选学生"><option value="">全部学生</option><option value="unsubmitted">未交卷</option><option value="below">最近成绩未达标</option><option value="partial">病例提前提交</option><option value="finished">病例完整提交</option></select><button id="refresh">刷新</button><button id="excel">导出 Excel</button></div></div>
+<div class="scroll"><table><thead><tr><th>学生</th><th>最近成绩</th><th>最高成绩</th><th>病例进度</th><th>最近记录</th><th><span class="sr">详情</span></th></tr></thead><tbody id="roster"></tbody></table></div><p id="status" role="status"></p></section>
+<footer><nav><details id="tools"><summary>管理</summary><div class="menu"><a href="archive.html">学习档案与导出</a><a href="analysis.html">知识目标与讨论</a><a href="experience-v25.html">彩绘与证书</a><button id="logout">退出登录</button></div></details></nav></footer></main>
+<dialog id="detail"><div class="dhead"><div><h2 id="person"></h2><small id="number"></small></div><button id="close" aria-label="关闭学生明细">关闭</button></div><div id="content"></div></dialog>
+</body></html>

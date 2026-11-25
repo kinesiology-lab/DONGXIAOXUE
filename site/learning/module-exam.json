@@ -1,0 +1,551 @@
+{
+  "version": "module100-v1",
+  "passScore": 60,
+  "total": 100,
+  "modules": [
+    {
+      "id": "joint",
+      "name": "人体运动学虚拟实验室",
+      "instruction": "选择一项课程实验，调整或播放模型后保存一个观察时刻。"
+    },
+    {
+      "id": "bones",
+      "name": "骨骼拼接挑战",
+      "instruction": "在拼接挑战中把一块骨骼放到正确的侧别、位置与方向。"
+    },
+    {
+      "id": "painting",
+      "name": "肌肉彩绘与体表定位",
+      "instruction": "选择一侧有彩绘投影的肌肉，提交体表彩绘并通过定位判定。"
+    },
+    {
+      "id": "muscles",
+      "name": "肌肉安放工坊",
+      "instruction": "将一块肌肉正确安放后，答对它的功能关联题。"
+    },
+    {
+      "id": "clinic",
+      "name": "足踝虚拟诊室综合实验",
+      "instruction": "完成并记录一项诊室教学操作，如步态时相、静态平衡或足弓选骨。"
+    }
+  ],
+  "items": [
+    {
+      "id": "joint-practice",
+      "module": "joint",
+      "title": "实验操作",
+      "prompt": "选择一项课程实验，调整或播放模型后保存一个观察时刻。",
+      "type": "operation",
+      "points": 8,
+      "key": 0,
+      "choices": [
+        "已按要求完成"
+      ],
+      "why": "选择一项课程实验，调整或播放模型后保存一个观察时刻。"
+    },
+    {
+      "id": "ankle-motion",
+      "title": "距小腿关节",
+      "prompt": "请患者把脚尖向上勾，再向下踩。主要观察哪个关节的哪组运动？",
+      "choices": [
+        "距小腿关节的背伸与跖屈",
+        "距下关节的内翻与外翻",
+        "跖趾关节的屈与伸"
+      ],
+      "key": 0,
+      "why": "勾脚和下踩分别是背伸和跖屈，主要发生于距小腿关节。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "pronation",
+      "title": "足旋前",
+      "prompt": "在足部可以自由活动的模型上，哪三个分运动组合成足旋前？",
+      "choices": [
+        "背伸、内收、内翻",
+        "跖屈、外展、内翻",
+        "背伸、外展、外翻"
+      ],
+      "key": 2,
+      "why": "以足相对小腿的运动描述，旋前包括背伸、外展与外翻。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "supination",
+      "title": "足旋后",
+      "prompt": "在非负重模型上做足旋后，应把跖屈与哪两种运动组合？",
+      "choices": [
+        "外展和内翻",
+        "内收和内翻",
+        "外展和外翻"
+      ],
+      "key": 1,
+      "why": "足旋后包括跖屈、内收和内翻。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "cycle",
+      "title": "步态周期",
+      "prompt": "以右脚为参照，哪段过程是一个完整的步态周期？",
+      "choices": [
+        "右脚初次着地到右脚下一次初次着地",
+        "右脚着地到左脚着地",
+        "右脚着地到右脚离地"
+      ],
+      "key": 0,
+      "why": "同侧足连续两次初次着地之间包括一次支撑相和一次摆动相。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "support",
+      "node": "gait_events",
+      "title": "辨认支撑时相",
+      "prompt": "对照两行着地带，竖线所指这一刻属于哪个支撑时相？",
+      "choices": [
+        "右侧单支撑",
+        "双支撑",
+        "左侧单支撑"
+      ],
+      "key": 1,
+      "why": "右足已经着地，左足尚未离地，两足同时接触地面。连续平地步行时，每个完整周期出现两段双支撑。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "goniometer",
+      "title": "踝活动度测量",
+      "prompt": "从外侧用量角器测背伸与跖屈，哪种对位符合实验示范？",
+      "choices": [
+        "轴心放在足跟，固定臂沿足底",
+        "轴心对准外踝，固定臂沿腓骨，移动臂沿第五跖骨",
+        "轴心放在髌骨，移动臂沿胫骨"
+      ],
+      "key": 1,
+      "why": "外踝是轴心参考，小腿和足各对应一条量角器臂。",
+      "module": "joint",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "bones-practice",
+      "module": "bones",
+      "title": "实验操作",
+      "prompt": "在拼接挑战中把一块骨骼放到正确的侧别、位置与方向。",
+      "type": "operation",
+      "points": 8,
+      "key": 0,
+      "choices": [
+        "已按要求完成"
+      ],
+      "why": "在拼接挑战中把一块骨骼放到正确的侧别、位置与方向。"
+    },
+    {
+      "id": "mortise-bones",
+      "title": "踝穴的组成",
+      "prompt": "在模型上圈出踝穴，应同时选中哪些结构？",
+      "choices": [
+        "胫骨远端关节面、内踝和外踝",
+        "距骨、跟骨和舟骨",
+        "胫骨平台、腓骨头和髌骨"
+      ],
+      "key": 0,
+      "why": "胫骨远端关节面构成顶部，胫骨内踝与腓骨外踝构成两侧壁。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "subtalar",
+      "title": "距下关节",
+      "prompt": "观察后足内翻与外翻时，应重点观察哪两块骨之间的运动？",
+      "choices": [
+        "距骨与跟骨",
+        "舟骨与第一跖骨",
+        "胫骨与腓骨"
+      ],
+      "key": 0,
+      "why": "距下关节由距骨与跟骨相接形成，参与后足的内翻与外翻。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "medial-arch",
+      "title": "内侧纵弓",
+      "prompt": "拼接内侧纵弓时，哪一组骨骼应放在一起？",
+      "choices": [
+        "舟骨、骰骨、第4～5跖骨",
+        "跟骨、距骨、舟骨、三块楔骨及第1～3跖骨",
+        "跟骨、骰骨、第4～5跖骨"
+      ],
+      "key": 1,
+      "why": "从后向前，内侧纵弓经跟骨、距骨、舟骨、楔骨延续至内侧三条跖骨。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "lateral-arch",
+      "title": "外侧纵弓",
+      "prompt": "沿足外侧从足跟走向前足，会依次经过外侧纵弓的哪些骨？",
+      "choices": [
+        "跟骨、舟骨、第3和第4跖骨",
+        "跟骨、骰骨、第4和第5跖骨",
+        "距骨、舟骨、第1和第2跖骨"
+      ],
+      "key": 1,
+      "why": "骰骨位于跟骨前方，与外侧两条跖骨共同组成外侧纵弓。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "transverse",
+      "title": "横弓",
+      "prompt": "在跗跖关节附近观察横弓，哪组结构最合适？",
+      "choices": [
+        "跟骨结节与跖骨头",
+        "三块楔骨、骰骨及跖骨底",
+        "五趾的远节趾骨"
+      ],
+      "key": 1,
+      "why": "中足至跖骨底的骨骼横向排列成弓，应从足的内侧观察到外侧。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "mortise",
+      "title": "踝穴与距骨",
+      "prompt": "陈女士下楼时脚尖向下。此时进入踝穴的主要是距骨滑车的哪一部分？",
+      "choices": [
+        "较宽的前部",
+        "较窄的后部",
+        "距骨头"
+      ],
+      "key": 1,
+      "why": "跖屈时，较窄的滑车后部进入踝穴，骨性嵌合相对减少。结合她描述的内翻动作，再检查外侧稳定性。",
+      "module": "bones",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "painting-practice",
+      "module": "painting",
+      "title": "实验操作",
+      "prompt": "选择一侧有彩绘投影的肌肉，提交体表彩绘并通过定位判定。",
+      "type": "operation",
+      "points": 8,
+      "key": 0,
+      "choices": [
+        "已按要求完成"
+      ],
+      "why": "选择一侧有彩绘投影的肌肉，提交体表彩绘并通过定位判定。"
+    },
+    {
+      "id": "painting-side",
+      "title": "体表侧别",
+      "prompt": "面对人体前面观做彩绘，选择“人体右侧”应以谁为准？",
+      "choices": [
+        "观察者",
+        "模型自身",
+        "屏幕右边"
+      ],
+      "key": 1,
+      "why": "左右侧以模型自身的解剖学方位为准。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "painting-landmark",
+      "title": "体表定位",
+      "prompt": "在小腿前方定位胫骨前肌，最适合先找到哪个骨性标志？",
+      "choices": [
+        "肩峰",
+        "尺骨鹰嘴",
+        "胫骨前缘"
+      ],
+      "key": 2,
+      "why": "找到胫骨前缘，再沿其外侧辨认肌腹。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "painting-leg",
+      "title": "肌腹位置",
+      "prompt": "转到小腿后面观，哪块肌肉的浅表肌腹最容易辨认？",
+      "choices": [
+        "腓肠肌",
+        "胫骨前肌",
+        "肱二头肌"
+      ],
+      "key": 0,
+      "why": "腓肠肌位于小腿后侧浅层。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "painting-view",
+      "title": "观察方向",
+      "prompt": "从前面观切换到后面观后，模型右小腿的侧别怎样变化？",
+      "choices": [
+        "变成左侧",
+        "仍是模型右侧",
+        "需要按屏幕位置重命名"
+      ],
+      "key": 1,
+      "why": "观察方向改变不会改变人体的解剖侧别。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "painting-depth",
+      "title": "肌肉层次",
+      "prompt": "从体表观察小腿后侧时，比目鱼肌相对腓肠肌主要位于哪一层？",
+      "choices": [
+        "更深层",
+        "皮肤表面",
+        "小腿前侧"
+      ],
+      "key": 0,
+      "why": "比目鱼肌大部分位于腓肠肌深面。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "muscle",
+      "node": "muscle_match",
+      "title": "控制前足落地",
+      "prompt": "从足跟接触地面到前足缓缓落下，哪组肌肉在控制这个动作？",
+      "choices": [
+        "腓肠肌主动加快跖屈",
+        "腓骨长肌主动抬起足尖",
+        "胫骨前肌等背伸肌制动跖屈"
+      ],
+      "key": 2,
+      "why": "这段时间踝在跖屈，背伸肌群提供反向力矩，让前足有控制地落地。注意区分关节运动方向和肌肉用力方向。",
+      "module": "painting",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "muscles-practice",
+      "module": "muscles",
+      "title": "实验操作",
+      "prompt": "将一块肌肉正确安放后，答对它的功能关联题。",
+      "type": "operation",
+      "points": 8,
+      "key": 0,
+      "choices": [
+        "已按要求完成"
+      ],
+      "why": "将一块肌肉正确安放后，答对它的功能关联题。"
+    },
+    {
+      "id": "placement",
+      "title": "肌肉安放",
+      "prompt": "核对一块肌肉的安放位置，除了肌腹所在区域，还应核对什么？",
+      "choices": [
+        "模型颜色",
+        "两端附着及跨过的关节",
+        "画面中所占像素"
+      ],
+      "key": 1,
+      "why": "两端附着和走行共同决定它与关节的位置关系。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "biceps",
+      "title": "肘屈曲",
+      "prompt": "把肱二头肌安放到上臂前侧后，哪项动作符合它的功能？",
+      "choices": [
+        "伸膝",
+        "足外翻",
+        "屈肘和前臂旋后"
+      ],
+      "key": 2,
+      "why": "肱二头肌跨过肘关节，参与屈肘和前臂旋后。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "tibialis",
+      "title": "内翻与足弓",
+      "prompt": "从内踝后方追踪一条肌腱到舟骨粗隆附近。其肌肉参与足内翻并支撑内侧纵弓。它是哪块肌肉？",
+      "choices": [
+        "胫骨后肌",
+        "腓骨短肌",
+        "胫骨前肌"
+      ],
+      "key": 0,
+      "why": "胫骨后肌腱绕过内踝后方，主要止点之一在舟骨粗隆。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "resistance",
+      "title": "抗阻外翻",
+      "prompt": "固定小腿后，患者正在把足向外翻。治疗师应怎样施加阻力？",
+      "choices": [
+        "沿胫骨长轴向近端推",
+        "在前足外侧向外推",
+        "在前足外侧向内施加阻力"
+      ],
+      "key": 2,
+      "why": "阻力与主动外翻的方向相反。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "evertors",
+      "title": "外翻肌群",
+      "prompt": "做抗阻外翻时，肌肉彩绘应重点标出哪两块肌肉？",
+      "choices": [
+        "胫骨前肌和胫骨后肌",
+        "腓肠肌和比目鱼肌",
+        "腓骨长肌和腓骨短肌"
+      ],
+      "key": 2,
+      "why": "腓骨长肌和短肌位于小腿外侧，均参与足外翻。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "calf",
+      "title": "跖屈肌群",
+      "prompt": "提踵时，小腿三头肌参与跖屈。它由哪些肌肉组成？",
+      "choices": [
+        "胫骨前肌和趾长伸肌",
+        "腓肠肌和比目鱼肌",
+        "胫骨后肌和腓骨长肌"
+      ],
+      "key": 1,
+      "why": "腓肠肌有两个头，与深面的比目鱼肌合称小腿三头肌。",
+      "module": "muscles",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "clinic-practice",
+      "module": "clinic",
+      "title": "实验操作",
+      "prompt": "完成并记录一项诊室教学操作，如步态时相、静态平衡或足弓选骨。",
+      "type": "operation",
+      "points": 8,
+      "key": 0,
+      "choices": [
+        "已按要求完成"
+      ],
+      "why": "完成并记录一项诊室教学操作，如步态时相、静态平衡或足弓选骨。"
+    },
+    {
+      "id": "drawer",
+      "title": "床旁稳定性检查",
+      "prompt": "固定小腿远端并托住足跟向前带动，患侧较健侧前移增多。哪一结构的约束可能减弱？",
+      "choices": [
+        "距腓前韧带",
+        "三角韧带",
+        "跟腱"
+      ],
+      "key": 0,
+      "why": "距腓前韧带是限制距骨前移的重要结构。还要结合侧间差异、终末感和病史解释检查发现。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "tilt",
+      "title": "内翻加压试验",
+      "prompt": "在本实验的踝中立位，固定小腿并使后足内翻，主要观察哪条外侧韧带的约束？",
+      "choices": [
+        "三角韧带",
+        "距腓后韧带",
+        "跟腓韧带"
+      ],
+      "key": 2,
+      "why": "中立位内翻应力主要评估跟腓韧带的约束，解释时还要结合对侧和症状。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "lunge",
+      "title": "负重背伸",
+      "prompt": "做面墙弓步测试，哪一次适合记入足尖距墙距离？",
+      "choices": [
+        "足跟抬起后膝盖刚好触墙",
+        "把脚明显向外转后膝盖触墙",
+        "足跟贴地，膝盖沿第二脚趾方向触墙"
+      ],
+      "key": 2,
+      "why": "相同足位下保持足跟贴地才能比较负重背伸。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "balance-cop",
+      "title": "静态平衡",
+      "prompt": "陈女士站在测力板上，屏幕绘出的 COP 轨迹表示什么？",
+      "choices": [
+        "全身质心在空间中的实际路径",
+        "右踝关节中心的运动路径",
+        "支撑面上地面反作用力合力作用点的移动"
+      ],
+      "key": 2,
+      "why": "COP 是压力中心，测力板记录承力位置随时间的变化。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "scan-color",
+      "title": "足底扫描色标",
+      "prompt": "在实验所用的同一色标上，红橙色与蓝色分别表示什么？",
+      "choices": [
+        "相对较高与较低的足底压力",
+        "较快与较慢的步速",
+        "较强与较弱的踝外翻肌力"
+      ],
+      "key": 0,
+      "why": "读图时要先核对色标，再比较左右脚相同区域的压力。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    },
+    {
+      "id": "soap",
+      "title": "SOAP 记录",
+      "prompt": "哪一项应记在 SOAP 的 O（客观检查）栏？",
+      "choices": [
+        "计划下次复测负重背伸",
+        "同一方法测得负重弓步距墙右侧 6 cm、左侧 8 cm",
+        "患者说走不平路容易崴脚"
+      ],
+      "key": 1,
+      "why": "测量结果属于客观资料，患者主诉属于 S，复测计划属于 P。",
+      "module": "clinic",
+      "type": "question",
+      "points": 2
+    }
+  ]
+}

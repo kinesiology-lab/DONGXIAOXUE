@@ -1,0 +1,113 @@
+.plantar-scan{margin:8px 0;padding:10px 8px;border:1px solid #d4e2df;background:#f6faf8;border-radius:12px;text-align:center}.plantar-scan svg{display:block;width:100%;max-height:min(43vh,330px);height:auto}.plantar-scan[data-state=waiting] .scan-reveal{visibility:hidden}.plantar-scan figcaption{margin:7px 0 2px;color:#526b64;font-size:12px}.scan-legend{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;font-size:13px;color:#294b41}.scan-legend span{display:inline-flex;align-items:center;gap:3px}.scan-legend i{width:12px;height:12px;border-radius:3px;border:1px solid #0002}body[data-split-practice][data-node=cop_explain] #conversation:not([hidden]){display:flex!important}body:is([data-node=pressure_compare],[data-node=cop_explain]) .learning-bubble-v25{display:none!important}body[data-node=pressure_compare] #taskStatus:empty{display:none}.cop-single-chart{display:block;width:100%;height:auto;max-height:50vh;object-fit:contain}.cop-reference-option{display:flex;align-items:center;gap:6px;margin:8px 0}.cop-reference-option input{accent-color:#17635a}.cop-legend{font-size:13px;color:#435e56}
+
+body[data-split-practice][data-node=gait_interpret] #conversation:not([hidden]){display:flex!important}#gaitLoadPrint{display:none}body[data-gait-print=true] #gaitLoadPrint{display:block}#gaitLoadPrint svg{max-height:165px}body[data-node=gait_interpret][data-dialogue-pending=true] #options{display:none!important}
+
+body[data-node=muscle_match] .clinical-nav select{max-width:100%;padding:7px;border:1px solid #a4c5bd;border-radius:8px;color:#183e3a;background:#fff}body[data-node=muscle_match] .clinical-nav button[aria-pressed=true]{background:#165f55;color:white}
+
+body:is([data-node=gait_events],[data-node=muscle_match],[data-node=static_cop],[data-node=pressure_compare]) .dxx-assistant-launch{left:16px;right:auto}
+@media(max-width:700px){body[data-split-practice] .dxx-assistant-launch{display:none!important}}
+
+#spokenPressureMap[hidden]{display:none}#spokenPressureMap .plantar-scan{max-width:460px;margin:10px auto 2px}#spokenPressureMap svg{height:clamp(136px,28dvh,235px);max-height:none}#spokenPressureMap .scan-legend{gap:6px 11px}
+
+.motion-lesson video{display:block;width:100%;height:auto;aspect-ratio:22/13;border-radius:10px;background:#eff5f2}.motion-lesson h3{font-size:1.04rem;margin:.45em 0}.motion-lesson p{line-height:1.6}
+
+/* Reserve canvas space for the working foot and keep the test panel alongside it. */
+body[data-node=muscle_match] #clinic {--mmt-panel:clamp(260px,32vw,378px);background:#e8eee9}
+@media(min-width:701px){
+ body[data-node=muscle_match] #clinic #scene{inset:58px auto auto 0!important;width:calc(100% - var(--mmt-panel) - 24px)!important;height:calc(100% - 222px)!important}
+ body[data-node=muscle_match][data-split-practice] #clinic #scene{height:calc(100% - 66px)!important}
+ body[data-node=muscle_match] #clinic #taskDock{inset:125px 9px 8px auto!important;width:var(--mmt-panel)!important;max-height:none!important}
+ body[data-node=muscle_match] #clinic:has(#taskDock:not([hidden])) #conversation:not([hidden]){inset:auto auto 8px 8px!important;left:8px!important;transform:none!important;width:calc(100% - var(--mmt-panel) - 32px)!important;max-height:150px!important}
+ body[data-node=muscle_match] #conversation .conversation-head{display:none}
+}
+@media(max-width:700px){
+ body[data-node=muscle_match] #clinic #scene{inset:54px 0 auto!important;width:100%!important;height:calc(48% - 54px)!important}
+ body[data-node=muscle_match] #clinic #taskDock{inset:48% 6px 105px!important;width:auto!important;max-height:none!important}
+ body[data-node=muscle_match][data-split-practice] #clinic #taskDock{bottom:6px!important}
+ body[data-node=muscle_match] #clinic:has(#taskDock:not([hidden])) #conversation:not([hidden]){inset:auto 6px 5px!important;left:6px!important;transform:none!important;width:calc(100% - 12px)!important;max-height:95px!important}
+ body[data-node=muscle_match] #conversation .conversation-head,body[data-node=muscle_match] #learningGuide{display:none}
+}
+#spokenGait{margin:8px auto 0;text-align:center}#spokenGait[hidden]{display:none}
+#spokenGait video{display:block;width:100%;height:auto;max-height:min(35dvh,292px);object-fit:contain;border-radius:10px;background:#e9f1ed}
+#spokenGait figcaption{margin-top:3px;color:#375b50;font-size:13px}
+body[data-gait-print=true] #gaitMedia{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:8px}
+#gaitMedia #spokenGait{grid-column:1;grid-row:1;width:100%}
+#gaitMedia #gaitLoadPrint{grid-column:2;grid-row:1;min-width:0}
+body[data-node=gait_interpret] #clinic #coach,body:is([data-node=plan],[data-node=plan_intro],[data-node=synthesis],[data-node=debrief]) #clinic #coach{display:none!important}
+body:is([data-node=muscle_match],[data-node=gait_interpret],[data-node=plan],[data-node=synthesis]) .assessment-dock{inset:8px auto auto 50%;transform:translateX(-50%);padding:4px 9px;font-size:13px}
+@media(max-width:700px){body:is([data-node=muscle_match],[data-node=gait_interpret],[data-node=plan],[data-node=synthesis]) .assessment-dock{inset:auto auto 4px 4px;transform:none;font-size:11px;padding:2px 5px}body[data-gait-print=true] #gaitMedia{gap:3px}#gaitMedia figcaption{font-size:11px}}
+.evidence-paper section{margin:16px 0}.evidence-paper section h3{margin:0 0 5px}.evidence-paper section ul{margin:0;padding-left:1.4em}.evidence-paper li{margin:4px 0}
+
+body[data-soap-writing=A] #clinic,body[data-soap-writing=P] #clinic{--soap-panel:clamp(320px,40vw,540px);background:#eaf0eb}
+@media(min-width:701px){
+ body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #scene{inset:54px auto 0 0!important;width:calc(100% - var(--soap-panel) - 16px)!important;height:calc(100% - 58px)!important}
+ body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #conversation:not([hidden]){inset:84px 10px auto auto!important;left:auto!important;transform:none!important;width:var(--soap-panel)!important;max-height:calc(100dvh - 98px)!important}
+}
+@media(max-width:700px){
+ body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #scene{inset:48px auto auto 0!important;width:100%!important;height:calc(48% - 48px)!important}
+ body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #conversation:not([hidden]){inset:49% 8px auto 8px!important;left:8px!important;transform:none!important;width:calc(100% - 16px)!important;max-height:49dvh!important}
+}
+body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #coach,body:is([data-soap-writing=A],[data-soap-writing=P]) #clinic #taskDock,body:is([data-soap-writing=A],[data-soap-writing=P]) .learning-bubble-v25{display:none!important}
+body[data-soap-writing=P] #clinic #conversation #options{display:grid}
+body[data-node=muscle_match] #clinic #coach{display:none!important}
+
+#scene.orbit-foot{cursor:grab;touch-action:none}
+#scene.orbit-foot:active{cursor:grabbing}
+#strengthOrbit:not([hidden]){position:absolute;z-index:6;transform:translate(-50%,-100%);display:flex;align-items:center;gap:2px;padding:3px 5px;background:#fffffff5;border:1px solid #c4d7d0;border-radius:9px;white-space:nowrap;box-shadow:0 2px 8px #13382d18}
+#strengthOrbit span{padding:0 6px;color:#33594f;font-size:12px}
+#strengthOrbit button{border:0;border-radius:5px;background:transparent;color:#174b43;min-height:32px;padding:4px 8px;font-size:13px}
+#strengthOrbit button:hover,#strengthOrbit button:focus-visible{background:#deeee6}
+@media(pointer:coarse){#strengthOrbit span{display:none}#strengthOrbit button{min-height:36px}}
+@media(max-width:820px){#strengthOrbit span{display:none}}
+
+.scan-prediction fieldset,.balance-reason fieldset{border:0;padding:0;margin:10px 0}
+.scan-prediction legend,.balance-reason legend{font-weight:700;color:#193f39;margin-bottom:8px}
+.scan-prediction label,.balance-reason label{display:block;padding:4px 2px;cursor:pointer}
+.scan-prediction input,.balance-reason input{accent-color:#17665a;margin-right:7px}
+.scan-prediction table,.balance-reason table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.scan-prediction :is(th,td),.balance-reason :is(th,td){padding:4px;border-bottom:1px solid #d4e2dd;text-align:center}
+.scan-prediction caption,.balance-reason caption{font-size:12px;color:#42665c;padding:5px}
+.balance-reason textarea{width:100%;min-height:4.3em;resize:vertical;font:inherit;padding:8px;border:1px solid #a4bfb5;border-radius:6px}
+
+.functional-assessment{display:grid;gap:.7rem}.functional-assessment label{display:grid;gap:.3rem;font-weight:600}.functional-assessment textarea{width:100%;box-sizing:border-box;padding:.6rem;font:inherit;border:1px solid #93afa7;border-radius:.5rem}.functional-assessment button{justify-self:end}
+
+.heel-film{margin:.7rem 0 0;padding:.6rem;border:1px solid #baccc6}.heel-film input{width:100%}.heel-closeups{display:flex;gap:.35rem}.heel-closeups figure{width:50%;margin:0}.heel-closeups canvas{width:100%;height:auto}.heel-closeups figcaption{font-size:.8rem}
+
+/* Keep the full paired footprints, their scale and the dialogue controls in view. */
+body #clinic #conversation:has(#spokenPressureMap:not([hidden])):not([hidden]) {
+  inset:50% auto auto 50%!important; transform:translate(-50%,-50%)!important;
+  width:min(780px,calc(100vw - 20px))!important; max-height:calc(100dvh - 20px)!important;
+  overflow:hidden; --gutter:clamp(12px,2vw,22px);
+}
+#spokenPressureMap:not([hidden]) .plantar-scan { margin:6px auto; padding:6px; }
+#spokenPressureMap:not([hidden]) svg { height:clamp(125px,28dvh,224px); max-width:100%; }
+#spokenPressureMap figcaption { margin:3px 0 0; }
+@media (min-width:580px) and (max-height:600px) {
+  #conversationBody:has(#spokenPressureMap:not([hidden])) { padding-block:6px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); align-content:start; align-items:start; column-gap:12px; }
+  #conversationBody:has(#spokenPressureMap:not([hidden])) > :not(#spokenPressureMap) { grid-column:1; max-width:none; }
+  #conversationBody #spokenPressureMap:not([hidden]) { grid-column:2; grid-row:1 / span 16; }
+  #spokenPressureMap:not([hidden]) .plantar-scan { margin:0; }
+  #spokenPressureMap:not([hidden]) svg { height:clamp(92px,calc(100dvh - 190px),200px); }
+}
+
+.single-stance-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.stance-side{display:grid;align-content:start;gap:5px;padding:8px;border:1px solid #cee1dc;border-radius:9px}
+.stance-side strong{font-size:1.15rem;color:#195e50}.stance-side progress{width:100%;height:8px;accent-color:#267976}
+.stance-side button{min-width:0;padding:5px}.single-stance output{display:block;margin-top:8px}
+body[data-node=static_cop] #clinic #coach{display:none!important}
+body[data-node=static_cop]:not([data-balance-help]) #clinic #conversation:not([hidden]){display:none!important}
+body[data-node=static_cop][data-balance-help] #clinic #conversation:not([hidden]){max-width:350px!important;max-height:42dvh}
+.functional-assessment section h3{font-size:1rem;margin:0 0 .3rem}.functional-assessment section ul{margin:0;padding-left:1.3em}
+
+.clinic-workshop{display:grid;gap:.7rem}.clinic-workshop>p,.clinic-workshop fieldset p{margin:0}
+.clinic-workshop fieldset{min-width:0;margin:0;padding:8px;border:1px solid #c3d6cd;border-radius:9px}.clinic-workshop legend{font-weight:600}
+.clinic-workshop fieldset button{margin:3px}.clinic-workshop-window{padding:10px;width:min(1200px,96vw);height:90dvh;border:1px solid #89aba2;border-radius:12px}
+.clinic-workshop-window[open]{display:flex;flex-direction:column}.clinic-workshop-window::backdrop{background:#1a3439ac}
+.clinic-workshop-window header{display:flex;align-items:center;gap:12px}.clinic-workshop-window header button{margin-left:auto}
+.clinic-workshop-window p{margin:6px}.clinic-workshop-window iframe{flex:1;min-height:0;border:1px solid #dae2dc;width:100%}
+
+.contraction-study{margin:0;padding:10px 14px;border:1px solid #c6dbd2;border-radius:12px;background:#f0f6f2;display:grid;grid-template-columns:minmax(130px,38%) 1fr;column-gap:12px;align-items:center}
+.contraction-study canvas{grid-row:1/4;max-width:100%;width:205px;height:auto;justify-self:center}
+.contraction-study figcaption,.contraction-study>div,.contraction-study p{grid-column:2}
+.contraction-study figcaption{font-weight:700}.contraction-study button{margin:2px}.contraction-study button[aria-pressed=true]{background:#185c50;color:white}
+@media(max-width:520px){.contraction-study{grid-template-columns:minmax(94px,35%) 1fr;padding:7px;column-gap:5px}.contraction-study button{padding:5px}}

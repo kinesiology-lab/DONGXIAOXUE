@@ -1,0 +1,15 @@
+.cycle-choices,.cycle-controls { display:grid; gap:6px; }
+.cycle-choices button { text-align:left; line-height:1.4; padding:8px 10px; }
+.cycle-choices button[aria-pressed=true] { border-color:#ae7941; }
+.cycle-controls { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.cycle-controls button { padding:8px 3px; line-height:1.45; font-size:14px; }
+.cycle-controls button[aria-pressed=true] { background:#145b51; color:white; border-color:#145b51; }
+.cycle-feedback,.cycle-caption { line-height:1.5; margin:6px 0; }
+.cycle-caption { padding:8px 10px; color:#164f48; border-left:3px solid #318579; background:#eff6f3; }
+.cycle-phases .task-card-title { margin:10px 0 6px; }
+body[data-node=gait_events] #taskStatus:empty { display:none; }
+
+#gaitFootLabel { display:none; position:fixed; top:0; left:0; width:0; height:0; pointer-events:none; z-index:2; }
+body[data-node=gait_events] #gaitFootLabel:not([hidden]) { display:block; }
+#gaitFootLabel b { position:absolute; white-space:nowrap; left:10px; bottom:18px; color:#fff; background:#18594f; border:1px solid white; border-radius:10px; font:600 13px/1.4 system-ui,sans-serif; padding:2px 8px; }
+#gaitFootLabel::before { content:''; position:absolute; bottom:0; left:0; height:23px; width:2px; background:#18594f; box-shadow:0 0 0 1px #fff; transform-origin:bottom; transform:rotate(34deg); }

@@ -1,0 +1,191 @@
+{
+  "schema": "soap-assets-v26",
+  "measured": false,
+  "entries": [
+    {
+      "path": "soap/case-profile.json",
+      "bytes": 3631,
+      "sha256": "6b26451f66714590996388a57e363fe5820fa3a21c6587513afe545b80dce1cf"
+    },
+    {
+      "path": "soap/explorers-data.js",
+      "bytes": 10056,
+      "sha256": "4726c2f60fb53d08b726546123d4bff3402fb27dad03ab703a7a9102e74a7bf9"
+    },
+    {
+      "path": "soap/explorers.css",
+      "bytes": 2987,
+      "sha256": "741b939faecd3d65d46101a867c3a1c837989166c0d7d690ac0b84d58cbdc5ab"
+    },
+    {
+      "path": "soap/explorers.js",
+      "bytes": 7922,
+      "sha256": "197e8ee8e72dc9b51da6231e74647809838bd90b5d10d2ac47cc546cece4e2c2"
+    },
+    {
+      "path": "soap/focus-v21.css",
+      "bytes": 2899,
+      "sha256": "cfc76c292dff758bb60be685452a8e8e13f5344067fe5102f3e4159a9a5198a2"
+    },
+    {
+      "path": "soap/index.html",
+      "bytes": 2900,
+      "sha256": "1b993a3a0376e52925b4859b654abdeccc52d78f7b69ae86c5ec6a93ba1d468e"
+    },
+    {
+      "path": "soap/interview-dialogue.json",
+      "bytes": 871,
+      "sha256": "b51c62806f7099d511bc86efdb7254f7a18515bda1f695d2ae1659abf89352cf"
+    },
+    {
+      "path": "soap/live-verification.json",
+      "bytes": 589,
+      "sha256": "5246433f871ea9825ac6b26b6bfbb72b3122adc61d336402e607ea945797e941"
+    },
+    {
+      "path": "soap/media/arch.jpg",
+      "bytes": 37851,
+      "sha256": "32495cb4dffcea35e3a5e09de5132743cdaa9c680e9dc0c7c3419f4946b20c99"
+    },
+    {
+      "path": "soap/media/arch.mp4",
+      "bytes": 2196121,
+      "sha256": "536485f1a0ef67d4def86055895899ffbd4a78d8f469d30d76473453dfc74f0e"
+    },
+    {
+      "path": "soap/media/gait.jpg",
+      "bytes": 53411,
+      "sha256": "f00c7e7aa4458c914c8d529f940a9ee547001d417bf0887dc5664bd9c71767e5"
+    },
+    {
+      "path": "soap/media/gait.mp4",
+      "bytes": 3189561,
+      "sha256": "d464c8e412c131d22017b7fbe44ef6c51513229aaa6d4a15b7f9eb16282ef151"
+    },
+    {
+      "path": "soap/media/intro-original.jpg",
+      "bytes": 25351,
+      "sha256": "663adcc877084d59d096641d635bbd60e3f5a23c9a001c224ef3f30e594a9b02"
+    },
+    {
+      "path": "soap/media/intro-original.mp4",
+      "bytes": 26054310,
+      "sha256": "e3d7b4eb71636a3d13e1e205ca7baf0e749ffc366ac5864e4f3c99205d05929f"
+    },
+    {
+      "path": "soap/media/intro-playback.mp4",
+      "bytes": 2493711,
+      "sha256": "4c0edf0f88a706ba9284e5b4a316f69079ec50e8cf2b718e397e2e77191e4e5f"
+    },
+    {
+      "path": "soap/media/intro.jpg",
+      "bytes": 47067,
+      "sha256": "269a7db3e076045bf134c261a48874a798d34df05b450e7d7bedc0127f78c18b"
+    },
+    {
+      "path": "soap/media/intro.mp4",
+      "bytes": 2935423,
+      "sha256": "688404cf3d407735b63a94d6d7409826ce8a9798869328ea1c37780fbc972f26"
+    },
+    {
+      "path": "soap/media/plan.jpg",
+      "bytes": 70915,
+      "sha256": "5c5ee3696340ae7f5d93b0a0107990c5e92209cc782f052d7a4143df215a16ab"
+    },
+    {
+      "path": "soap/media/plan.mp4",
+      "bytes": 2868476,
+      "sha256": "5452f94182ccc80d712ee65136e656f709e4e8661e847ddf454078ecde6e1bce"
+    },
+    {
+      "path": "soap/media/portrait-patient.jpg",
+      "bytes": 8490,
+      "sha256": "2fa7a2fa5c8fb18cfd2c0d9f78271f7757a311f0bbd3202d50d4b632b0212ce5"
+    },
+    {
+      "path": "soap/media/portrait-therapist.jpg",
+      "bytes": 11102,
+      "sha256": "b2520c8e81b303bdcc8aa9936bad90fc9fecce5bd6a13be20cb78f35b0d8951f"
+    },
+    {
+      "path": "soap/media/scan.jpg",
+      "bytes": 32966,
+      "sha256": "82188f5b213149fa58e0083e390236dc22c394b2771622ed9a41b4caa887c23e"
+    },
+    {
+      "path": "soap/media/scan.mp4",
+      "bytes": 1070058,
+      "sha256": "c1126985bdefd0a73c34b30239cc205b411ba1c8b0742e46613cbcbeb2006cb7"
+    },
+    {
+      "path": "soap/media-experience.js",
+      "bytes": 6272,
+      "sha256": "18a3ac954f5c39a816e7407b4145a3ebcf795e7e790e5fa2c07df27b22d526f4"
+    },
+    {
+      "path": "soap/media-provenance.json",
+      "bytes": 6324,
+      "sha256": "7472624ef783d9107cf422429a29201089287bccdde1a95a8ea6c58836c163b0"
+    },
+    {
+      "path": "soap/media.json",
+      "bytes": 2402,
+      "sha256": "e87d5c2dd9b688649c7cfb828480b9effef08f754a56375556371cc2e336e97f"
+    },
+    {
+      "path": "soap/references.json",
+      "bytes": 7563,
+      "sha256": "1d09fb88f61fa4e8a8241a9ff5c9ea8481bbd05cc19127e44f00869f6cedd28f"
+    },
+    {
+      "path": "soap/review-v19.html",
+      "bytes": 6188,
+      "sha256": "0b37c7a50478d7bce98e4739b749362e69fa145825c96578b1cbbf8f534cf09f"
+    },
+    {
+      "path": "soap/soap.css",
+      "bytes": 7965,
+      "sha256": "7dae92d1ab4b17bbc14e70212edb84ba98d1fcea5cadd5d497e2ab00e9797003"
+    },
+    {
+      "path": "soap/soap.js",
+      "bytes": 33812,
+      "sha256": "5daa6356582e9ef56f8a35049043cd5a3b44355056e25c1ffb342494c95ce46b"
+    },
+    {
+      "path": "soap/teaching-data.js",
+      "bytes": 2749,
+      "sha256": "cb6c3ec02486c8eb8e509d093d98dc1a7ec54b9c6357a0c814f6a14a15cf447f"
+    },
+    {
+      "path": "soap/verification/browser-verification-v19.json",
+      "bytes": 999,
+      "sha256": "214162e6635cbed930033d8ceb274aed605ec8d770b7f9b0af2399918857bdd2"
+    },
+    {
+      "path": "soap/verification/technical-tests-v19.json",
+      "bytes": 1188,
+      "sha256": "d3b4a7321d997faf63d262ce3f500740ad04bc01ae75ef740ce7e7a5e649b7d5"
+    },
+    {
+      "path": "soap/media/intro-patient62.mp4",
+      "bytes": 4852289,
+      "sha256": "6a32aaf0014d5307a2638060686ed7896273338feafe78ef39223b5c4c0c6209"
+    },
+    {
+      "path": "soap/media/gait-patient62.mp4",
+      "bytes": 4576996,
+      "sha256": "2ce77757c706a6dc23daa174711d8001d22b325978b988073f0f50b52a420bd1"
+    },
+    {
+      "path": "soap/media/arch-patient62.mp4",
+      "bytes": 3172751,
+      "sha256": "ebcf1add3d6dccc60de2329984eb74c2e6d71175e99021d3a0e82c29470ab79b"
+    },
+    {
+      "path": "soap/media/plan-patient62.mp4",
+      "bytes": 4189226,
+      "sha256": "8100539808fb1a7030ed1752adf624082d1e55e848c33fb718713f1ae27498aa"
+    }
+  ]
+}

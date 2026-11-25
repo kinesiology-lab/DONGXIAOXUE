@@ -1,0 +1,34 @@
+#home .home-hero{height:clamp(190px,20vw,285px);min-height:0}
+#home .home-greeting{left:0;right:0;bottom:0;border:0;border-radius:0;box-shadow:none;padding:18px 26px;background:linear-gradient(90deg,#f0f7ed 12%,#f2f8eced 58%,#f6faefaa)}
+#home .home-greeting .eyebrow{font-size:.84rem;letter-spacing:0}
+#home .home-greeting h1{font-size:clamp(1.3rem,2.2vw,2rem)}
+#learningProjects{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:22px 0 14px}
+.mode-switch{display:inline-flex;gap:4px;padding:4px;background:#e7eee7;border-radius:14px}
+.mode-switch button{border:0;background:transparent;color:#375b47;border-radius:10px;min-height:44px;font-weight:650;padding:8px 22px}
+.mode-switch button[aria-pressed=true]{background:#285d46;color:#fff}
+#caseExam,#freeProjects{scroll-margin-top:1rem}
+#caseExam{max-width:850px;margin:0 auto 22px;padding:clamp(17px,4vw,38px);border:1px solid #ccdccf;border-radius:20px;background:#fff;color:#214534;box-shadow:0 8px 32px #244d3210}
+#caseExam h3{font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.5;margin:.45em 0 .75em}
+#caseExam p{line-height:1.65}
+#caseExam button{margin:4px 6px 4px 0;min-height:42px}
+#caseExam .primary{background:#276447;color:white}
+#caseExam .exam-options{border:0;padding:0;margin:16px 0;display:grid;gap:9px}
+.exam-options label{display:flex;align-items:center;gap:12px;border:1px solid #cbdace;border-radius:11px;padding:12px 14px;cursor:pointer;line-height:1.5}
+.exam-options label:has(:checked){background:#edf7ef;border-color:#458458}
+.exam-options input{width:18px;height:18px;accent-color:#256643;flex-shrink:0}
+.exam-actions{display:flex;align-items:center;flex-wrap:wrap}.exam-actions .primary{margin-left:auto!important}
+#caseExam button:disabled{opacity:.5}.exam-list{display:grid;margin:14px 0}
+#caseExam details{padding:12px 0;border-top:1px solid #dae5dc}#caseExam summary,.case-practice summary{cursor:pointer;font-weight:650}
+#freeProjects .flagship-grid{margin-bottom:12px}#freeProjects .clinic-card{padding:clamp(18px,3vw,29px)}#freeProjects .clinic-card h3{margin:0;font-size:1.45rem}#freeProjects .clinic-card p{margin:.7em 0}
+.free-shortcuts{display:flex;gap:8px 16px;flex-wrap:wrap;margin-top:12px}.free-shortcuts a{color:#225a46;text-underline-offset:3px}
+.mode-help{margin:16px 0}.mode-help a,.mode-help button{margin:8px 12px 0 0}.mode-help summary{cursor:pointer}
+body[data-study-mode=test][data-hub-view=home] .dxx-tutor-open,body[data-study-mode=test][data-hub-view=home] .dxx-tutor,body[data-study-mode=test] #home .mode-help{display:none}
+[hidden]#caseExam,[hidden]#freeProjects,#welcomeVoice[hidden]{display:none!important}
+@media(max-width:600px){#home .home-hero{height:150px}#home .home-greeting{padding:11px 14px;min-height:0}#home .home-greeting p{font-size:13px}#learningProjects{margin-top:12px}#learningProjects>button{font-size:.85rem;padding:8px}.mode-switch button{padding:8px 12px}}
+body[data-study-mode=test][data-hub-view=home] .dxx-assistant-launch,body[data-study-mode=test][data-hub-view=home] .dxx-assistant{display:none!important}
+#freeProjects .learning-card .primary{display:inline-flex;align-items:center;justify-content:space-between;padding:11px 16px;border-radius:10px;text-decoration:none}
+#freeProjects .free-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}.free-shortcuts section{border:1px solid #d7e3db;border-radius:12px;overflow:hidden;background:#fbfdfb}.free-shortcuts img{display:block;width:100%;height:clamp(80px,10vw,132px);object-fit:cover}.free-shortcuts section>div{padding:10px 12px}.free-shortcuts h4{margin:0 0 .3em;color:#274d3a;font-size:1rem}.free-shortcuts a{display:inline-flex;align-items:center;min-height:36px;margin-right:12px;text-underline-offset:4px}
+@media(max-width:620px){#freeProjects .free-shortcuts{grid-template-columns:1fr;gap:8px}.free-shortcuts section{display:grid;grid-template-columns:84px 1fr}.free-shortcuts img{height:100%;min-height:76px}.free-shortcuts section>div{padding:8px 12px}.free-shortcuts a{min-height:34px}#home .home-hero .home-greeting{display:flex!important;position:absolute;inset:auto 0 0;transform:none;background:#f1f7edee}#home .home-greeting .eyebrow,#home .home-greeting p{display:none}}
+
+#caseExam .exam-certificate { display:inline-block; background:#236349; color:white; padding:10px 17px; margin:6px 12px 10px 0; border-radius:10px; font-weight:650; text-decoration:none; }
+#caseExam .exam-list { grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:5px; }

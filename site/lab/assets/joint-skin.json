@@ -1,0 +1,401 @@
+{
+  "parts": [
+    {
+      "type": "skin",
+      "key": "skin_shank",
+      "side": "right",
+      "skinRegion": "shank",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 8478,
+      "indexCount": 54804,
+      "bounds": [
+        [
+          -0.17573283116022745,
+          -0.0781065970659256,
+          -0.011478300206363201
+        ],
+        [
+          -0.02217179909348488,
+          0.3913539946079254,
+          0.24671350046992302
+        ]
+      ],
+      "positions": 0,
+      "normals": 101736,
+      "indices": 203472,
+      "joints": 422688,
+      "weights": 490512
+    },
+    {
+      "type": "skin",
+      "key": "skin_shank",
+      "side": "left",
+      "skinRegion": "shank",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 8395,
+      "indexCount": 54537,
+      "bounds": [
+        [
+          0.021171800792217255,
+          -0.0781112015247345,
+          -0.011513699777424335
+        ],
+        [
+          0.17470020055770874,
+          0.39057400822639465,
+          0.24668624997138977
+        ]
+      ],
+      "positions": 626160,
+      "normals": 726900,
+      "indices": 827640,
+      "joints": 1045788,
+      "weights": 1112948
+    },
+    {
+      "type": "skin",
+      "key": "skin_thigh",
+      "side": "right",
+      "skinRegion": "thigh",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 4579,
+      "indexCount": 27189,
+      "bounds": [
+        [
+          -0.17026600241661072,
+          0.3732059895992279,
+          -0.011347400024533272
+        ],
+        [
+          -0.005304589867591858,
+          0.789667010307312,
+          0.17679600417613983
+        ]
+      ],
+      "positions": 1247268,
+      "normals": 1302216,
+      "indices": 1357164,
+      "joints": 1465920,
+      "weights": 1502552
+    },
+    {
+      "type": "skin",
+      "key": "skin_thigh",
+      "side": "left",
+      "skinRegion": "thigh",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 4566,
+      "indexCount": 27243,
+      "bounds": [
+        [
+          0.0038800800684839487,
+          0.3696490079164505,
+          -0.01751670055091381
+        ],
+        [
+          0.16897599399089813,
+          0.7924609780311584,
+          0.1767899990081787
+        ]
+      ],
+      "positions": 1575816,
+      "normals": 1630608,
+      "indices": 1685400,
+      "joints": 1794372,
+      "weights": 1830900
+    },
+    {
+      "type": "skin",
+      "key": "skin_pelvis",
+      "side": "right",
+      "skinRegion": "pelvis",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 5214,
+      "indexCount": 31251,
+      "bounds": [
+        [
+          -0.168503999710083,
+          0.6419389843940735,
+          -0.04222140088677406
+        ],
+        [
+          0.0056930300779640675,
+          1.0081299543380737,
+          0.20584799349308014
+        ]
+      ],
+      "positions": 1903956,
+      "normals": 1966524,
+      "indices": 2029092,
+      "joints": 2154096,
+      "weights": 2195808
+    },
+    {
+      "type": "skin",
+      "key": "skin_pelvis",
+      "side": "left",
+      "skinRegion": "pelvis",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 5139,
+      "indexCount": 30828,
+      "bounds": [
+        [
+          -0.005324999801814556,
+          0.6388009786605835,
+          -0.04221729934215546
+        ],
+        [
+          0.16714000701904297,
+          1.0081900358200073,
+          0.20577499866485596
+        ]
+      ],
+      "positions": 2279232,
+      "normals": 2340900,
+      "indices": 2402568,
+      "joints": 2525880,
+      "weights": 2566992
+    },
+    {
+      "type": "skin",
+      "key": "skin_trunk",
+      "side": "right",
+      "skinRegion": "trunk",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 5768,
+      "indexCount": 33699,
+      "bounds": [
+        [
+          -0.17945599555969238,
+          0.8790479898452759,
+          -0.045247599482536316
+        ],
+        [
+          0.008559470064938068,
+          1.3885999917984009,
+          0.2255229949951172
+        ]
+      ],
+      "positions": 2649216,
+      "normals": 2718432,
+      "indices": 2787648,
+      "joints": 2922444,
+      "weights": 2968588
+    },
+    {
+      "type": "skin",
+      "key": "skin_trunk",
+      "side": "left",
+      "skinRegion": "trunk",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 5639,
+      "indexCount": 32940,
+      "bounds": [
+        [
+          -0.01045059971511364,
+          0.8850160241127014,
+          -0.045239198952913284
+        ],
+        [
+          0.17941699922084808,
+          1.3864500522613525,
+          0.225505992770195
+        ]
+      ],
+      "positions": 3060876,
+      "normals": 3128544,
+      "indices": 3196212,
+      "joints": 3327972,
+      "weights": 3373084
+    },
+    {
+      "type": "skin",
+      "key": "skin_arm",
+      "side": "right",
+      "skinRegion": "arm",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 3729,
+      "indexCount": 22278,
+      "bounds": [
+        [
+          -0.271699994802475,
+          1.0142300128936768,
+          -0.033424798399209976
+        ],
+        [
+          -0.1303659975528717,
+          1.3671400547027588,
+          0.1486400067806244
+        ]
+      ],
+      "positions": 3463308,
+      "normals": 3508056,
+      "indices": 3552804,
+      "joints": 3641916,
+      "weights": 3671748
+    },
+    {
+      "type": "skin",
+      "key": "skin_arm",
+      "side": "left",
+      "skinRegion": "arm",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 3746,
+      "indexCount": 22374,
+      "bounds": [
+        [
+          0.13207699358463287,
+          1.0149699449539185,
+          -0.032320499420166016
+        ],
+        [
+          0.2715510030587514,
+          1.367319941520691,
+          0.15306299924850464
+        ]
+      ],
+      "positions": 3731412,
+      "normals": 3776364,
+      "indices": 3821316,
+      "joints": 3910812,
+      "weights": 3940780
+    },
+    {
+      "type": "skin",
+      "key": "skin_forearm",
+      "side": "right",
+      "skinRegion": "forearm",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 6867,
+      "indexCount": 45858,
+      "bounds": [
+        [
+          -0.3339098606790815,
+          0.6474577296863903,
+          0.017776350490748882
+        ],
+        [
+          -0.1414480060338974,
+          1.0383399724960327,
+          0.20876566569010416
+        ]
+      ],
+      "positions": 4000716,
+      "normals": 4083120,
+      "indices": 4165524,
+      "joints": 4348956,
+      "weights": 4403892
+    },
+    {
+      "type": "skin",
+      "key": "skin_forearm",
+      "side": "left",
+      "skinRegion": "forearm",
+      "label": "皮肤",
+      "color": [
+        0.86,
+        0.67,
+        0.54
+      ],
+      "source": "BodyParts3D FJ2810",
+      "vertexCount": 6737,
+      "indexCount": 45141,
+      "bounds": [
+        [
+          0.1443520039319992,
+          0.6474842011928559,
+          0.017799099907279015
+        ],
+        [
+          0.3319557698873373,
+          1.0387500524520874,
+          0.20881437696516514
+        ]
+      ],
+      "positions": 4513764,
+      "normals": 4594608,
+      "indices": 4675452,
+      "joints": 4856016,
+      "weights": 4909912
+    }
+  ],
+  "bytes": 5017704,
+  "sha256": "ea2ec80e76050965fd7cc80710b8ebaeecb1976c1e6a29a2d984c8d13c5c2f6b",
+  "source": "BodyParts3D, © The Database Center for Life Science, CC BY 4.0. FJ2810 skin mesh, partitioned and weighted to the classroom atlas bones.",
+  "license": "../assembly/licenses/LICENSE.bodyparts3d-supplemental.txt",
+  "provenance": {
+    "id": "FJ2810",
+    "source": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip",
+    "archiveSha256": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+    "entry": "isa_BP3D_4.0_obj_99/FJ2810.obj",
+    "entrySha256": "682f402206f15592acdeaae8ffb6b34c3e5c3267fa4685e63d2e4920ef2a80e0",
+    "license": "CC-BY-4.0",
+    "modifications": "Z-up mm to Y-up m; triangulated in source order; recomputed normals; no inferred mirror or joint registration"
+  }
+}

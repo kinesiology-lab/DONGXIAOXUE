@@ -1,0 +1,142 @@
+{
+  "credit": "BodyParts3D © DBCLS, CC BY 4.0. Source models in Y-up metres; right distal femur cropped for the knee view.",
+  "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+  "archiveSha256": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e",
+  "parts": [
+    {
+      "key": "tibAnt",
+      "name": "胫骨前肌",
+      "id": "FJ1439",
+      "offset": 0,
+      "v": 2204,
+      "i": 7530,
+      "sourceSha256": "b03d2f54644969d153d3dfe4025ee629858e72c1e5ee3b0e7d5f16f54dc505b3"
+    },
+    {
+      "key": "ehl",
+      "name": "拇长伸肌",
+      "id": "FJ1408",
+      "offset": 83016,
+      "v": 1388,
+      "i": 5004,
+      "sourceSha256": "5d04387c23d30f567bd43765a7eb860bb5844bd67a16e8ddf3c571eaaad9facc"
+    },
+    {
+      "key": "edl",
+      "name": "趾长伸肌",
+      "id": "FJ1406",
+      "offset": 136344,
+      "v": 3964,
+      "i": 13638,
+      "sourceSha256": "cb5acc498691b7718bb7de1bada794e789687f2d91de9717c53e27cbeacceef8"
+    },
+    {
+      "key": "fibTert",
+      "name": "第三腓骨肌",
+      "id": "FJ1411",
+      "offset": 286032,
+      "v": 1488,
+      "i": 4248,
+      "sourceSha256": "e6e64e705d75002d677c0483c9c39a80ea3759ff1408e730ab9a5abc2d28e4cb"
+    },
+    {
+      "key": "tibPost",
+      "name": "胫骨后肌",
+      "id": "FJ1440",
+      "offset": 338736,
+      "v": 5039,
+      "i": 15408,
+      "sourceSha256": "6fc367885524fc416139372b55c64d8e1e4bc9010bee64020a72ad8e6f34a57d"
+    },
+    {
+      "key": "fhl",
+      "name": "拇长屈肌",
+      "id": "FJ1415",
+      "offset": 521304,
+      "v": 1847,
+      "i": 8274,
+      "sourceSha256": "b00ad979e807617650ab158b609e9c2c1032a9483be5e9c9ec5a4796455c809c"
+    },
+    {
+      "key": "fdl",
+      "name": "趾长屈肌",
+      "id": "FJ1414",
+      "offset": 598728,
+      "v": 3037,
+      "i": 12012,
+      "sourceSha256": "532d7f590f1997884f6307408173068414857a6d7d1a576cdb8828946bf427af"
+    },
+    {
+      "key": "popliteus",
+      "name": "腘肌",
+      "id": "FJ1430",
+      "offset": 719664,
+      "v": 588,
+      "i": 2574,
+      "sourceSha256": "78f5d5b80867116a0bbf59575efb8de3ed681030875a577bc00d310012df80fd"
+    },
+    {
+      "key": "gastrocM",
+      "name": "腓肠肌内侧头",
+      "id": "FJ1397",
+      "offset": 744072,
+      "v": 2263,
+      "i": 11526,
+      "sourceSha256": "d7f3aa44801171baade1a59c40a8f8bda72097bec07047f93f24ebaac4546cb4"
+    },
+    {
+      "key": "gastrocL",
+      "name": "腓肠肌外侧头",
+      "id": "FJ1394",
+      "offset": 844488,
+      "v": 1748,
+      "i": 9156,
+      "sourceSha256": "621dc10e974bcc1c53a8843bf1db3a1c322c8327d279010c58533bd28952bf08"
+    },
+    {
+      "key": "plantaris",
+      "name": "跖肌",
+      "id": "FJ1429",
+      "offset": 923064,
+      "v": 1466,
+      "i": 7536,
+      "sourceSha256": "49fdbe0ba556419a9c29efca287a944630275fb55b75f93168af254efaa777b7"
+    },
+    {
+      "key": "soleus",
+      "name": "比目鱼肌",
+      "id": "FJ1437",
+      "offset": 988392,
+      "v": 2674,
+      "i": 13254,
+      "sourceSha256": "c9c62b720ffe375a8eddf390608684a796f1ea54880a5c34fa440404addc399e"
+    },
+    {
+      "key": "achilles",
+      "name": "跟腱",
+      "id": "FJ1405",
+      "offset": 1105584,
+      "v": 3663,
+      "i": 11646,
+      "sourceSha256": "64696f68cd961e4dfb7809ab9899a6777e994ea3bf696213da7a0ac1a507bed9"
+    },
+    {
+      "key": "patella",
+      "name": "髌骨",
+      "id": "FJ3381",
+      "offset": 1240080,
+      "v": 178,
+      "i": 918,
+      "sourceSha256": "b513b8cb6b37e3eb4211fd35a4469efdf79de37887a0af8c582efc836a6f6307"
+    },
+    {
+      "key": "distalFemur",
+      "name": "股骨远端",
+      "id": "FJ3365",
+      "offset": 1248024,
+      "v": 643,
+      "i": 3717,
+      "sourceSha256": "5eff0f92905dd45bd0e79b1de0144dc15988c73c683468163255ba1452d58037"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.student-windows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:20px 0;color:#203d38}
+.student-windows .sw-panel{min-width:0;margin:0;padding:17px 19px;border:1px solid #d6e2dd;border-radius:12px;background:#fff}
+.sw-panel h2{display:flex;align-items:baseline;gap:8px;margin:0 0 12px;font-size:19px}.sw-panel h2 small,.sw-panel summary small{color:#5e7069;font-size:12px;font-weight:400}
+.sw-panel input{box-sizing:border-box;width:100%;border:1px solid #d4e0db;border-radius:6px;padding:7px 10px;font:inherit;color:inherit}
+.sw-panel .sw-list{max-height:350px;overflow:auto;scrollbar-gutter:stable}
+.sw-panel details{margin:0;border:0;border-radius:0;background:transparent;border-bottom:1px solid #e8eeeb}
+.sw-panel summary{position:relative;display:grid;grid-template-columns:1fr auto;gap:3px 8px;padding:10px 12px 10px 0;cursor:pointer;list-style:none;color:inherit}.sw-panel summary::after{content:'›';position:absolute;top:10px;right:0}.sw-panel details[open] summary::after{transform:rotate(90deg)}.sw-panel summary::-webkit-details-marker{display:none}
+.sw-panel summary strong{font-size:14px;overflow-wrap:anywhere}.sw-preview{grid-column:1/-1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#435c53;font-size:14px}
+.sw-panel details p{margin:4px 0 8px;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere}.sw-panel button{margin-top:8px}.sw-panel .sw-status{margin:8px 0 0;font-size:14px;color:#5e7069}.sw-panel .sw-status:empty{display:none}
+@media(max-width:730px){.student-windows{grid-template-columns:1fr}.sw-panel summary{grid-template-columns:1fr}.sw-panel .sw-list{max-height:280px}}
